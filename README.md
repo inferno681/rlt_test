@@ -5,7 +5,6 @@
   <img src="https://img.shields.io/badge/Python-3.12.3-F8F8FF?style=for-the-badge&logo=python&logoColor=20B2AA">
   <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white">
   <img src="https://img.shields.io/badge/Docker-555555?style=for-the-badge&logo=docker&logoColor=2496ED">
-  <img src="https://img.shields.io/badge/celery-%23a9cc54.svg?style=for-the-badge&logo=celery&logoColor=ddf4a4">
 
 </div>
 

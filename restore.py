@@ -26,7 +26,9 @@ def restore(path):
     for coll in os.listdir(path):
         if coll.endswith('.bson'):
             with open(os.path.join(path, coll), 'rb+') as f:
-                db[coll.split('.')[0]].insert_many(bson.decode_all(f.read()))
+                db[coll.split('.')[0]].insert_many(
+                    bson.decode_all(f.read()), ordered=False
+                )
     logger.info('Данные импортированны')
 
 

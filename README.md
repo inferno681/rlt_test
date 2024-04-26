@@ -48,9 +48,9 @@ pip install -r requirements.txt
 ```
 
 
-Импортируйте тестовые данные через консоль находясь в корневом каталоге:
+Импортируйте тестовые данные:
   ```
-  mongorestore "connection string"
+  python restore.py
   ```
 
 Команда для запуска бота:
@@ -74,6 +74,7 @@ pip install -r requirements.txt
   DB_NAME = sampleDB (название базы данных)
   COLLECTION_NAME = sample_collection (имя коллекции)
   ```
+- Создайте папку **test_data** и скопируйте [тестовые данные](https://drive.google.com/file/d/1pcNm2TAtXHO4JIad9dkzpbNc4q7NoYkx/view?usp=sharing)
 - Из папки **infra** запустите docker-compose-prod.yaml:
   ```
   ~$ docker compose -f docker-compose-prod.yaml up -d

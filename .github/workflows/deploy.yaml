@@ -55,7 +55,6 @@ jobs:
           sudo docker compose -f docker-compose-prod.yaml pull
           sudo docker compose -f docker-compose-prod.yaml down
           sudo docker compose -f docker-compose-prod.yaml up -d
-          sudo docker compose -f docker-compose-prod.yaml exec bot python restore.py
 
 
   send_message:

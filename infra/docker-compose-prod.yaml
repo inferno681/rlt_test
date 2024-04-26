@@ -7,13 +7,14 @@ services:
       - "27017:27017"
     volumes:
       - db_value:/data/db
-      - ./test_data:/app/test_data
     env_file: .env
 
   bot:
     image: inferno681/rlt_test_bot:latest
     restart: always
     env_file: .env
+    volumes:
+      - ./test_data:/app/test_data
     depends_on:
       - db
 

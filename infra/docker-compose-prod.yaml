@@ -11,7 +11,7 @@ services:
     env_file: .env
 
   bot:
-    image: inferno681/rlt_test:latest
+    image: inferno681/rlt_test_bot:latest
     restart: always
     env_file: .env
     depends_on:

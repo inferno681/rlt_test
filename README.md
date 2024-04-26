@@ -1,4 +1,4 @@
-[![Deploy](https://github.com/inferno681/rlt-test/actions/workflows/deploy.yaml/badge.svg)](https://github.com/inferno681/rlt-test/actions/workflows/deploy.yaml)
+[![Deploy](https://github.com/inferno681/rlt_test/actions/workflows/deploy.yaml/badge.svg)](https://github.com/inferno681/rlt_test/actions/workflows/deploy.yaml)
 <br>
 
 <div id="header" align="center">
@@ -10,6 +10,8 @@
 </div>
 
 <br>
+
+Пример рабочего бота: [RLT_test](https://t.me/RLT_hausaufgabe_bot)
 
 <details><summary><h1>Тестовое задание Python developer от RLT</h1></summary>
 
@@ -36,7 +38,7 @@ pip install -r requirements.txt
 
 ```
   BOT_TOKEN = Токен телеграм бота
-  DB_HOST = ви (хост)
+  DB_HOST = db (хост)
   DB_PORT = 27017 (порт)
   MONGO_INITDB_ROOT_USERNAME = mongo_user (имя пользователя для СУБД)
   MONGO_INITDB_ROOT_PASSWORD = secret_password (пароль пользователя для СУБД)
@@ -65,7 +67,7 @@ pip install -r requirements.txt
 - Перейдите в папку **infra** и создайте в ней файл **.env** с переменными окружения:
   ```
   BOT_TOKEN = Токен телеграм бота
-  DB_HOST = ви (хост)
+  DB_HOST = db (хост)
   DB_PORT = 27017 (порт)
   MONGO_INITDB_ROOT_USERNAME = mongo_user (имя пользователя для СУБД)
   MONGO_INITDB_ROOT_PASSWORD = secret_password (пароль пользователя для СУБД)

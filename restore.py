@@ -1,10 +1,13 @@
 import bson
+import logging
 import os
 
 import pymongo
 
 from config_reader import config
 from constants import CONNECTION_STRING
+
+logger = logging.getLogger(__name__)
 
 
 def restore(path):
@@ -24,6 +27,7 @@ def restore(path):
         if coll.endswith('.bson'):
             with open(os.path.join(path, coll), 'rb+') as f:
                 db[coll.split('.')[0]].insert_many(bson.decode_all(f.read()))
+    logger.info('Данные импортированны')
 
 
 def main():
